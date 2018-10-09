@@ -1,0 +1,6 @@
+
+
+2018-9-27
+    完成jpa、druid、mybatis-plus
+
+    下步完成shiro权限管理

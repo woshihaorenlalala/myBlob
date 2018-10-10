@@ -3,3 +3,5 @@
  jpa+druid  : 670e1d7cab442713850561d63d995d52b35151e5
 
  shiro     : fa3a7ba41f6056326c5c6eaab1f5c11f621fca71
+
+ log4j2     : 7e581a82e910b1e8e29d2cb20d7ae8078dca6446

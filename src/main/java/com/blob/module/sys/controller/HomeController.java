@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
 
 /**
  * Created by cc on 2018/10/9.
@@ -21,13 +22,18 @@ import javax.servlet.http.HttpServletRequest;
 public class HomeController {
 
     @RequestMapping(value = "/index")
-    public ModelAndView index(){
+    public String index(){
         ModelAndView mv = new ModelAndView("index");
-        return mv;
+        return "/index";
     }
 
-    @RequestMapping(value = "/login")
-    public String login(HttpServletRequest request){
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String login() {
+        return "/login";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String login(HttpServletRequest request, Map<String,Object> map){
 
         String exception = (String) request.getAttribute("shiroLoginFailure");
 
@@ -43,6 +49,7 @@ public class HomeController {
                 msg = "else:" + exception;
             }
         }
+        map.put("msg", msg);
         return "login";
     }
 }

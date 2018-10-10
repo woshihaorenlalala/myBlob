@@ -1,4 +1,4 @@
-package com.blob.module.common.config;
+package com.blob.module.common.config.druid;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;

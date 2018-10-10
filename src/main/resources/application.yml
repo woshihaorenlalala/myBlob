@@ -37,8 +37,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    show-sql: true
+    database: mysql
   thymeleaf:
     cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
 
 Appenders:
     Console:  #输出到控制台

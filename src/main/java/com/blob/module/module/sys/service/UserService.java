@@ -1,7 +1,7 @@
-package com.blob.module.sys.service;
+package com.blob.module.module.sys.service;
 
-import com.blob.module.sys.dao.UserDao;
-import com.blob.module.sys.entity.User;
+import com.blob.module.module.sys.dao.UserDao;
+import com.blob.module.module.sys.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

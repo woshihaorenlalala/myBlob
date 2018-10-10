@@ -1,9 +1,8 @@
-package com.blob.module.sys.entity;
+package com.blob.module.module.sys.entity;
 
 import com.blob.module.common.sys.entity.DataEntity;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.List;
 
 /**

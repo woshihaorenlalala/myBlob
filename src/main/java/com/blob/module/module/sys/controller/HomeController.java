@@ -1,4 +1,4 @@
-package com.blob.module.sys.controller;
+package com.blob.module.module.sys.controller;
 
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;

@@ -1,6 +1,6 @@
-package com.blob.module.sys.dao;
+package com.blob.module.module.sys.dao;
 
-import com.blob.module.sys.entity.User;
+import com.blob.module.module.sys.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

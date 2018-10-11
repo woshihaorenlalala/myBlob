@@ -1,4 +1,4 @@
-package com.blob.module.common.config.shiro;
+package com.blob.module.common.shiro;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import com.google.code.kaptcha.Producer;
@@ -15,8 +15,6 @@ import org.apache.shiro.web.servlet.SimpleCookie;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.servlet.Filter;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;

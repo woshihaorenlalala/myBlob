@@ -1,4 +1,4 @@
-package com.blob.module.common.config.shiro;
+package com.blob.module.common.shiro;
 
 import com.google.code.kaptcha.Constants;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;

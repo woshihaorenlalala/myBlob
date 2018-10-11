@@ -1,6 +1,9 @@
 package com.blob.module.common.sys.entity;
 
+import org.springframework.data.domain.Page;
+
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,7 +11,7 @@ import java.util.Date;
  * Created by cc on 2018/6/15.
  */
 @MappedSuperclass   //MappedSuperclass注解用来jpa生成子类表的时候也会将父类属性生成
-public class DataEntity<T> extends BaseEntity implements Serializable {
+public class DataEntity<T> extends BaseEntity<T> {
 
     private static final long serialVersionUID = 1L;
 
@@ -58,4 +61,5 @@ public class DataEntity<T> extends BaseEntity implements Serializable {
     public void setDelflag(int delflag) {
         this.delflag = delflag;
     }
+
 }

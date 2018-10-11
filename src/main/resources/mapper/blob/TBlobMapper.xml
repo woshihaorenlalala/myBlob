@@ -5,11 +5,55 @@
       SELECT
             id,
             title,
-            content,
+            CONVERT(GROUP_CONCAT(content) USING utf8 as content,
             `show`,
             create_time,
             delflag
         FROM
             t_blob
+        <where>
+            delflag = 0
+            <if test="title != null and title != ''">
+                AND LOCATE(#{title}, title) > 0
+            </if>
+        </where>
     </select>
+
+    <update id="insert">
+        INSERT INTO
+          t_blob(
+             title,
+             content,
+             create_time
+             )
+        VALUES
+             (
+             #{title},
+             #{content},
+             #{createTime}
+             )
+    </update>
+    <update id="update">
+        UPDATE
+          t_blob
+        SET
+            title=#{title},
+            content=#{content},
+            update_time=#{updateTime}
+        WHERE id=#{id}
+    </update>
+    <update id="updateShow">
+        UPDATE
+        t_blob
+        SET
+            show = #{show}
+        WHERE id=#{id}
+    </update>
+    <update id="delete">
+        UPDATE
+          t_blob
+        SET
+            delflag = 1
+        WHERE id=#{id}
+    </update>
 </mapper>

@@ -1,9 +1,9 @@
-package com.blob.module.common.config.shiro;
+package com.blob.module.common.shiro;
 
-import com.blob.module.sys.entity.Permission;
-import com.blob.module.sys.entity.Role;
-import com.blob.module.sys.entity.User;
-import com.blob.module.sys.service.UserService;
+import com.blob.module.module.sys.entity.Permission;
+import com.blob.module.module.sys.entity.Role;
+import com.blob.module.module.sys.entity.User;
+import com.blob.module.module.sys.service.UserService;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;

@@ -1,4 +1,4 @@
-package com.blob.module.common.config.shiro;
+package com.blob.module.common.shiro;
 
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
